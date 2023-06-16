@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+/* COMMON */
+.advice {
+    background-color: hsl(217, 19%, 24%);
+    color: hsl(193, 38%, 86%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px hsl(217, 19%, 13%);
+    word-wrap: normal;
+    padding: 40px;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advice-id {
+    text-align: center;
+    margin-bottom: 25px;
+    color: hsl(150, 100%, 66%);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.advice-text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.advice-divider {
+}
+
+.advice-divider-pattern {
+    width: 100%;
+    margin-top: 30px;
+    justify-self: center;
+}
+
+.advice-block {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.advice{
+    position: relative;
+}
+
+.refreshbtn-wrapper {
+    padding: 10px;
+}
+
+.refreshbtn {
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    
+    top: 90%;
+    left: 44%;
+    /* padding: 15px; */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+
+.refreshbtn-icon {
+    width: 20px;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 572px) {
+    .advice {
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 430px;
+        min-height: 270px;
+    }
+
+    .advice-block > div {
+        /* margin-top: 30px;
+        margin-bottom: 30px; */
+    }
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 572px) {
+
+    .advice {
+        /* background-color: yellow; */
+        width: 93vw;
+        aspect-ratio: 35/32;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .refreshbtn {
+        top: calc(100%-25px);
+        left: calc(50%-50px);
+    }
+}
